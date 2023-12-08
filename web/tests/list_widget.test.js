@@ -65,14 +65,14 @@ function make_scroll_container() {
     // Capture the scroll callback so we can call it in
     // our tests.
     $scroll_container.on = (ev, f) => {
-        assert.equal(ev, "scroll.list_widget_container");
+        assert.equal(ev, "scroll.list-widget_container");
         $scroll_container.call_scroll = () => {
             f.call($scroll_container);
         };
     };
 
     $scroll_container.off = (ev) => {
-        assert.equal(ev, "scroll.list_widget_container");
+        assert.equal(ev, "scroll.list-widget_container");
         $scroll_container.cleared = true;
     };
 

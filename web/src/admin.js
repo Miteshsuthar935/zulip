@@ -267,7 +267,7 @@ export function build_page() {
             }),
         };
 
-        tippy($("#realm_can_access_all_users_group_widget_container")[0], opts);
+        tippy($("#realm_can_access_all_users_group-widget_container")[0], opts);
     }
 }
 

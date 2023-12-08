@@ -408,7 +408,7 @@ export function create<Key = unknown, Item = Key>(
         set_up_event_handlers() {
             // on scroll of the nearest scrolling container, if it hits the bottom
             // of the container then fetch a new block of items and render them.
-            meta.$scroll_container.on("scroll.list_widget_container", function () {
+            meta.$scroll_container.on("scroll.list-widget_container", function () {
                 if (opts.post_scroll__pre_render_callback) {
                     opts.post_scroll__pre_render_callback();
                 }
@@ -437,7 +437,7 @@ export function create<Key = unknown, Item = Key>(
         },
 
         clear_event_handlers() {
-            meta.$scroll_container.off("scroll.list_widget_container");
+            meta.$scroll_container.off("scroll.list-widget_container");
 
             if (opts.$parent_container) {
                 opts.$parent_container.off("click.list_widget_sort", "[data-sort]");
